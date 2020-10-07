@@ -1,25 +1,25 @@
 ---
-- name: run Update Systems
+- name: 10-5-20 Update Systems
   hosts: Systems
   roles:
    - Update
 
-- name: run katello-tracer-upload
+- name: 10-5-20 katello-tracer-upload
   hosts: Sat6Clients
   roles:
    - Tracer
 
-- name: run insights-client
+- name: 10-5-20 insights-client
   hosts: Systems
   roles:
    - Insights
 
-- name: run update RHV hypervisors
+- name: 10-5-20 update RHV hypervisors
   hosts: RHEV
   roles:
    - UpdateRHV
 
-- name: run clean logs
+- name: 10-5-20 clean logs
   hosts: all
   roles:
    - CleanUpLogs
