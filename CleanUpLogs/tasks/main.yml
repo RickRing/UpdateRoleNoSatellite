@@ -1,0 +1,11 @@
+---
+- name: run find /var/log -name "*2019*" -delete
+  command: find /var/log -name "*2019*" -delete
+- name: run find /var/log -name "*2020*" -delete
+  command: find /var/log -name "*2020*" -delete
+- name: run find /var/log -name "*log.old" -delete
+  command: find /var/log -name "*log.old*" -delete
+- name: run rmabrt
+  shell: rmabrt
+
+

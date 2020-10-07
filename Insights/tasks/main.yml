@@ -1,0 +1,6 @@
+---
+- name: run insights-client
+  command: /usr/bin/insights-client
+
+
+

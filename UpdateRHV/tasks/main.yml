@@ -1,0 +1,14 @@
+---
+- name: run subscription-manager refresh
+  command: /usr/sbin/subscription-manager refresh
+
+- name: run yum update
+  yum: name=* state=latest update_cache=yes
+
+- name: run insights-client
+  command: /usr/bin/insights-client
+
+- name: run katello-tracer-upload
+  command: /usr/sbin/katello-tracer-upload
+
+

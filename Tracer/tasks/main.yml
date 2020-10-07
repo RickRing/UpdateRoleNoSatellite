@@ -1,0 +1,4 @@
+---
+- name: run katello-tracer-upload
+  command: /usr/sbin/katello-tracer-upload
+

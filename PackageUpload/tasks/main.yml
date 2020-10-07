@@ -1,0 +1,4 @@
+---
+- name: run katello-package-upload
+  command: /usr/sbin/katello-package-upload
+

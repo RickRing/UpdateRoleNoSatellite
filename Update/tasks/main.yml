@@ -1,0 +1,12 @@
+---
+- name: run subscription-manager refresh
+  command: /usr/sbin/subscription-manager refresh
+
+- name: run yum update
+  yum: 
+    name: '*' 
+    state: latest
+    update_cache: yes
+
+
+
