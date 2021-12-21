@@ -1,25 +1,25 @@
 ---
-- name: 10-27-20 Update Systems
+- name: Dec 2021:  Update Systems
   hosts: Systems
   roles:
    - Update
 
-- name: 10-27-20 katello-tracer-upload
+- name: Dec 2021:  katello-tracer-upload
   hosts: Sat6Clients
   roles:
    - Tracer
 
-- name: 10-27-20 insights-client
+- name: Dec 2021:  insights-client
   hosts: Systems
   roles:
    - Insights
 
-- name: 10-27-20 update RHV hypervisors
+- name: Dec 2021:  update RHV hypervisors
   hosts: RHEV
   roles:
    - UpdateRHV
 
-- name: 10-27-20 clean logs
+- name: Dec 2021: clean logs
   hosts: all
   roles:
    - CleanUpLogs
